@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital@1&family=Poppins:ital,wght@0,300;1,300&family=Quicksand&display=swap" rel="stylesheet">
+    
+    
+    <script defer src="JavaScript.js"></script>
+
+    <title>Task 1</title>
+</head>
+<body >
+  <div class="fix">
+    <div class="about" >
+        Guidelines <span class="report">Scavenge Space Inspection Report</span> Control Parameters Photos for unit
+    </div>
+
+<div class="container">
+    <section>
+    <table class="table1">
+        <thead>
+            <tr>
+                <th  class="head-table1" style="width: 23%;">Vessel name</th>
+                <th colspan="5" class="head-table1">BW KISOKU</th>
+            </tr>
+        </thead>
+        <tbody class="first-rows">
+        <tr>
+            <td class="table1-data" >Main engine Make</td>
+            <td class="table1-data" >MAN &amp; BW</td>
+            <td class="table1-data">Normal Service Load</td>
+            <td class="table1-data" style="width: 10%;">75.0 &percnt;</td>
+            <td class="table1-data">Main Engine RH</td>
+            <td class="table1-data">18400</td>
+        </tr><tr>
+            <td class="table1-data">Cylinder Lubricator Type</td>
+            <td class="table1-data" style="width: 20%;">Alpha Lubricator-Load Dependent</td>
+            <td class="table1-data">Cylinder Oil Type</td>
+            <td class="table1-data">BN 70</td>
+            <td class="table1-data">Type</td>
+            <td class="table1-data">7S60ME-C 8,5</td>
+        </tr></tbody>
+        <tbody class="last-row"><tr>
+            <td class="table1-data">Date</td>
+            <td class="table1-data">22 july 2022</td>
+            <td class="table1-data">Cnoyl Oil Cons(ltrs/24hr)</td>
+            <td class="table1-data">300</td>
+            <td class="table1-data">Position</td>
+            <td class="table1-data">MAN B&amp;W</td>
+        </tr>
+    </tbody>
+    </table></section>
+    <hr>
+
+    <section>
+    <table class="table2">
+            <th rowspan="4" class="head-table2" id="text-rotate" >CHECKS</td>
+            <td rowspan="4" class="table2-data" style="width: 15%;">Condition and symbol</td>
+            <th class="head-table2" style="width: 20%">Cylinder no</th>
+            <th class="head-table2">1</th>
+            <th class="head-table2" id="num-row">2</th>
+            <th class="head-table2" id="num-row">3</th>
+            <th class="head-table2" id="num-row">4</th>
+            <th class="head-table2" id="num-row">5</th>
+            <th class="head-table2" id="num-row">6</th>
+            <th class="head-table2" id="num-row">7</th>
+        <tr >
+            <td class="table2-data">Running Hour when piston ring renwall was done</td>
+            <td class="table2-data" id="enter-value">
+                <input type="text"
+                  size="6"  
+                       name="hours" 
+                       placeholder="0" 
+                       onkeyup="substract(this)"></td>
+            <td class="table2-data">10</td>
+            <td class="table2-data">0</td>
+            <td class="table2-data">0</td>
+            <td class="table2-data">0</td>
+            <td class="table2-data"></td>
+            <td class="table2-data"></td>
+        </tr>
+        <tr >
+            <td class="table2-data">Running hour last overhauled</td>
+            <td class="table2-data" id="value-show" value="0">18400</td>
+            <td class="table2-data" id="total" >18390</td>
+            <td class="table2-data">3</td>
+            <td class="table2-data">4</td>
+            <td class="table2-data">5</td>
+            <td class="table2-data"></td>
+            <td class="table2-data"></td>
+        </tr>
+        <tr>
+            <td class="table2-data">Cylinder Oil Feed Rate(gm/kw-hr)</td>
+            <td class="table2-data">1.14</td>
+            <td class="table2-data">1.14</td>
+            <td class="table2-data">1.14</td>
+            <td class="table2-data">1.14</td>
+            <td class="table2-data">1.14</td>
+            <td class="table2-data"></td>
+            <td class="table2-data"></td>
+        </tr>
+    </table>
+    </section>  
+
+    <section>
+        <table class="table3">
+        <th rowspan="6" class="head-table3" id="text-rotate">PISTONS</th>
+        <td class="table3-data">Intact</td>
+        <td class="table3-data">*</td>
+        <td rowspan="6" class="table3-data">Piston Crown</td>
+        <td rowspan="6" class="table3-data" id="column">
+          <select name="select" id="select">
+            <option value="*" >*</option>
+            <option value="bu">BU</option>
+            <option value="lo">LO</option>
+            <option value="fo">FO</option>
+            <option value="lw">LW</option>
+            <option value="wd">WD</option>
+          </select></td>
+          <td rowspan="6" class="table3-data"><select name="select" id="select">
+            <option selected value="*">*</option>
+            <option value="bu">BU</option>
+            <option value="lo">LO</option>
+            <option value="fo">FO</option>
+            <option value="lw">LW</option>
+            <option value="wd">WD</option>
+          </select></td>
+          <td rowspan="6" class="table3-data"><select name="select" id="select">
+            <option selected value="*">*</option>
+            <option value="bu">BU</option>
+            <option value="lo">LO</option>
+            <option value="fo">FO</option>
+            <option value="lw">LW</option>
+            <option value="wd">WD</option>
+          </select></td>
+          <td rowspan="6" class="table3-data"><select name="select" id="select">
+            <option selected value="*">*</option>
+            <option value="bu">BU</option>
+            <option value="lo">LO</option>
+            <option value="fo">FO</option>
+            <option value="lw">LW</option>
+            <option value="wd">WD</option>
+          </select></td>
+          <td rowspan="6" class="table3-data"><select name="select" id="select">
+            <option selected value="*">*</option>
+            <option value="bu">BU</option>
+            <option value="lo">LO</option>
+            <option value="fo">FO</option>
+            <option value="lw">LW</option>
+            <option value="wd">WD</option>
+          </select></td>
+          <tr>
+            <td class="table3-data">Burning</td>
+            <td class="table3-data">BU</td>
+          </tr>
+          <tr>
+            <td class="table3-data" style="width:10%">Leaking Oil</td>
+            <td class="table3-data">LO</td>
+          </tr>
+          <tr>
+            <td class="table3-data">Leaking Oil</td>
+            <td class="table3-data">FO</td>
+          </tr>
+          <tr>
+            <td class="table3-data">Leaking Water</td>
+            <td class="table3-data">LW</td>
+          </tr>
+          <tr>
+            <td class="table3-data">White Deposit</td>
+            <td class="table3-data">WD</td>
+          </tr>
+    </table>
+    </section>
+</div>
+</div>
+</body>
+</html>
